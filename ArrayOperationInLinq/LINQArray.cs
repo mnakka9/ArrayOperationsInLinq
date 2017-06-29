@@ -15,7 +15,7 @@ public static class LINQArray
 
     public static int GetNthMaxNoFromArry(Int32[] array, int nth)
     {
-        return array.OrderByDescending(i => i).Distinct().Skip(nth).First();
+        return array.OrderByDescending(i => i).Distinct().Skip(nth-1).First();
     }
 
     public static int GetMinNoFromArry(Int32[] array)
@@ -30,7 +30,7 @@ public static class LINQArray
 
     public static int GetNthMinNoFromArry(Int32[] array, int nth)
     {
-        return array.OrderBy(i => i).Distinct().Skip(nth).First();
+        return array.OrderBy(i => i).Distinct().Skip(nth-1).First();
     }
 
     public static List<Tuple<int,int>> GetPairNumbersWhereSumIsGivenNumber(Int32[] numbersArray, int numbersum, WayofOperation waytodo)
@@ -49,7 +49,7 @@ public static class LINQArray
                 noone => true,
                 notwo => true,
                 (noone, notwo) => new Tuple<int, int>( noone, notwo )
-                ).Where( a => a.Item1 + a.Item2 == 9 ).Distinct().ToList() ;
+                ).Where( a => a.Item1 + a.Item2 == numbersum).Distinct().ToList() ;
 
         }
         return pairs;

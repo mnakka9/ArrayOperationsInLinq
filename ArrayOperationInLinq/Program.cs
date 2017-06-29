@@ -52,6 +52,7 @@ namespace ArrayOperationInLinq
             WriteLine(sumTuple.Item2.ToString().CustomFormat("Sum of Odd numbers in Array"));
 
             Read();
+
         }
     }
 }
