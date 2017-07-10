@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("OperationsOfArrayInLINQ")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("EPAM Systems")]
+[assembly: AssemblyCompany("Mahesh Nakka")]
 [assembly: AssemblyProduct("OperationsOfArrayInLINQ")]
-[assembly: AssemblyCopyright("Copyright © EPAM Systems 2017")]
+[assembly: AssemblyCopyright("Copyright © Mahesh Nakka 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
