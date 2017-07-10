@@ -8,7 +8,13 @@ public static class LINQArray
         return array.Max();
     }
 
-    public static int GetSecondMaxNoFromArry(Int32[] array)
+
+    public static int[] ArrayNumberLeftRotation(int[] array, int rotationNo)
+    {
+        return array.Skip(rotationNo).Concat(array.Take(rotationNo)).ToArray();
+    }
+
+public static int GetSecondMaxNoFromArry(Int32[] array)
     {
         return array.OrderByDescending(i => i).Distinct().Skip(1).First();
     }

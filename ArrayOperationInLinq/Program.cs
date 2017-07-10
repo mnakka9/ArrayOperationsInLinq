@@ -36,7 +36,7 @@ namespace ArrayOperationInLinq
 
             WriteLine("Possible Combinations of Pair of Numbers using Query :");
 
-            foreach (var tuple in LINQArray.GetPairNumbersWhereSumIsGivenNumber(givenArray, 9, LINQArray.WayofOperation.Query))
+            foreach (var tuple in LINQArray.GetPairNumbersWhereSumIsGivenNumber(givenArray, 18, LINQArray.WayofOperation.Query))
             {
                 WriteLine(tuple.ToStringForTuple());
             }
@@ -50,6 +50,12 @@ namespace ArrayOperationInLinq
             WriteLine(sumTuple.Item1.ToString().CustomFormat("Sum of Even numbers in Array"));
 
             WriteLine(sumTuple.Item2.ToString().CustomFormat("Sum of Odd numbers in Array"));
+
+
+            var ArrayNos = new int[] { 1, 2, 3, 4, 5 };
+            var rotationNo = 4;
+
+            WriteLine(String.Join(" ", LINQArray.ArrayNumberLeftRotation(ArrayNos, rotationNo)));
 
             Read();
 
